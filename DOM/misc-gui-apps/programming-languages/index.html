@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="assets/javascripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascripts/handlebars.min.js"></script>
+    <script src="assets/javascripts/languages.js"></script>
+    <title>Exercise 2 | Programming Languages</title>
+  </head>
+
+  <body>
+    <h1>Programming Languages</h1>
+    <main>
+      <!-- <h2>Ruby</h2> -->
+      <!-- <p class="description partial">Ruby is a dynamic, reflective</p> -->
+      <!-- <button class="toggle-description">Show More</button> -->
+    </main>
+
+    <script id="languages" type="text/x-handlebars-template">
+      {{#each languages}}
+        {{> languagePartial}}
+      {{/each}}
+    </script>
+
+    <script id="language-partial" type="text/x-handlebars-template"
+            data-type="partial">
+      <h2>{{name}}</h2>
+      <p class="description partial">{{partialDescription}}</p>
+      <button>Show More</button>
+    </script>
+
+    <script id="language-full" type="text/x-handlebars-template"
+            data-type="partial">
+      <h2>{{name}}</h2>
+      <p class="description">{{description}}</p>
+      <button>Show Less</button>
+    </script>
+  </body>
+
+</html>

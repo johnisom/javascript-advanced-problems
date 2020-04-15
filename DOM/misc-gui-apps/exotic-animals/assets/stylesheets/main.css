@@ -1,0 +1,42 @@
+body {
+    background-color: #335;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px 15px;
+    grid-template-columns: 50% 50%;
+    margin: 20px auto 0;
+    width: 80%;
+}
+
+figure {
+    position: relative;
+}
+
+img {
+    border: 15px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tooltip {
+    background-color: #000014b3;
+    border-radius: 5px;
+    display: none;
+    left: 15px;
+    margin-top: -15px;
+    padding: 15px;
+    position: absolute;
+    width: calc(100% - 60px);
+    z-index: 1;
+}

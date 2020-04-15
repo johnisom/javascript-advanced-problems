@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
+    <script src="assets/javascripts/animals.js"></script>
+    <title>Exercise 1 | Exotic Animals</title>
+  </head>
+
+  <body>
+    <h1>Exotic Animals</h1>
+    <main>
+    </main>
+
+    <script id="gallery" type="text/x-handlebars-template">
+    {{#each photoData}}
+      {{> figure}}
+    {{/each}}
+    </script>
+
+    <script id="figure" data-type="partial" type="text/x-handlebars-template">
+      <figure>
+        <img src="{{src}}" alt="{{alt}}">
+        <figcaption class="tooltip">{{tooltip}}</figcaption>
+      </figure>
+    </script>
+  </body>
+
+</html>

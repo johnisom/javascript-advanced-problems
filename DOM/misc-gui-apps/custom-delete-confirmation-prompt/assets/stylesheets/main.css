@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #264;
+    padding: 50px 27px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 640px;
+}
+
+.todos {
+    padding-left: 40px;
+    /* list-style-type: none; */
+}
+
+.todo {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.todo + .todo {
+    margin-top: 20px;
+}
+
+p.title {
+    display: inline;
+}
+
+.delete {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    transform: rotate(45deg);
+    width: 20px;
+}
+
+.delete:hover {
+    height: 24px;
+    width: 24px;
+}
+
+.delete::after {
+    bottom: 0;
+    left: calc(50% - 1.5px);
+    top: 0;
+    width: 3px;
+}
+
+.delete::before {
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 1.5px);
+}
+
+.delete::after, .delete::before {
+    background-color: #d55;
+    content: "";
+    position: absolute;
+}
+
+#confirmation-wrapper {
+    display: none;
+}
+
+#confirmation {
+    align-items: center;
+    background-color: #0004;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#inner-confirmation {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 15px;
+    width: 500px;
+}
+
+#inner-confirmation p {
+    margin: 20px 0;
+}
+
+#yes {
+    background-color: #a33;
+}
+
+#yes:hover {
+    background-color: #933;
+}
+
+#yes:active {
+    background-color: #833;
+}
+
+#no {
+    background-color: #3a3;
+}
+
+#no:hover {
+    background-color: #393;
+}
+
+#no:active {
+    background-color: #383;
+}
+
+#yes, #no {
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    float: right;
+    height: 30px;
+    margin-left: 5px;
+    width: 50px;
+}

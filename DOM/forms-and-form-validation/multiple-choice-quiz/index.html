@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
+    <script src="assets/javascripts/quiz.js"></script>
+    <title>Exercise 5 | Quiz</title>
+  </head>
+
+  <body>
+    <h1>Multiple Choice Quiz</h1>
+    <form action="#" method="POST">
+      <fieldset id="questions"></fieldset>
+      <input type="submit" class="active" value="Submit Quiz">
+      <input type="reset" value="Reset">
+    </form>
+
+    <script id="questions-templ" type="text/x-handlebars-template">
+    {{#each questions}}
+      <div class="question" data-id="{{id}}">
+        <p class="prompt">Q{{id}}. {{{description}}}</p>
+        {{#each options}}
+          <label>
+            <input type="radio" name="{{../id}}" value="{{this}}">
+            {{this}}
+          </label>
+        {{/each}}
+        <p class="result"></p>
+      </div>
+    {{/each}}
+    </script>
+  </body>
+
+</html>

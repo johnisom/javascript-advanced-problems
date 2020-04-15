@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #22596e;
+}
+
+body {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 430px;
+    margin: 50px auto 0;
+    padding: 5px;
+    width: 350px;
+}
+
+#screen {
+    border-bottom: 2px solid #ddd;
+    font-family: "Fira Code", "Cascadia Code", consolas, "Liberation Mono",
+                 "Courier New", courier, monospace;
+    height: 125px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+}
+
+#operation-window {
+    display: block;
+    font-size: 20px;
+    height: 20px;
+    margin: 15px 0 18px;
+}
+
+#entry-window {
+    display: block;
+    font-size: 50px;
+    height: 50px;
+}
+
+#buttons {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 280px;
+}
+
+#buttons * {
+    background-color: #ddd;
+    border-radius: 5px;
+    font-family: "Fira Code", "Cascadia Code", consolas, "Liberation Mono",
+                 "Courier New", courier, monospace;
+}
+
+#buttons *:hover {
+    background-color: #ccc;
+}
+
+#buttons *:focus { 
+    outline: none;
+}
+
+aside {
+    background-color: #fd9;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    margin: 50px 0 20px -5px;
+    padding: 10px;
+    width: 350px;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 20px 10px;
+}
+
+#show-hide-tips {
+    font-size: 0.8rem;
+}
+
+#show-hide-tips::before {
+    content: "";
+    margin-left: 20px;
+}
+
+#keyboard-tips {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+#keyboard-tips code {
+    background-color: #fc6;
+    font-family: "Fira Code", "Cascadia Code", consolas, "Liberation Mono",
+                 "Courier New", courier, monospace;
+    font-size: 1rem;
+    padding: 0 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="assets/javascripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascripts/handlebars.min.js"></script>
+    <script src="assets/javascripts/app.js"></script>
+    <title>Exercise 6 | Cars for Sale</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Buy Used Cars</h1>
+      <form target="#" method="GET">
+        <fieldset>
+          <label for="make">Make</label>
+          <select id="make" name="make"></select>
+
+          <label for="model">Model</label>
+          <select id="model" name="model"></select>
+
+          <label for="year">Year</label>
+          <select id="year" name="year"></select>
+
+          <label for="price">Price</label>
+          <select id="price" name="price"></select>
+        </fieldset>
+        <input type="submit" value="Filter">
+      </form>
+    </header>
+
+    <main>
+    </main>
+
+    <script id="cars" type="text/x-handlebars-template">
+    {{#each cars}}
+      <figure class="car" data-make="{{make}}" data-model="{{model}}"
+              data-price="{{price}}" data-year="{{year}}">
+        <img src="assets/{{image}}">
+        <figcaption>
+          <span class="make">{{make}}</span>
+          <span class="model">{{model}}</span>
+        </figcaption>
+        <dl>
+          <dt>Year</dt>
+          <dd>{{year}}</dd>
+          <dt>Price</dt>
+          <dd>{{price}}</dd>
+        </dl>
+        <a class="buy" href="#">Buy</a>
+      </figure>
+    {{/each}}
+    </script>
+
+    <script id="options" type="text/x-handlebars-template">
+      <option value="any" selected>Any</option>
+      {{#each values}}
+        <option value={{this}}>{{this}}</option>
+      {{/each}}
+    </script>
+  </body>
+
+</html>

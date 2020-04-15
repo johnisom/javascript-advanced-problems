@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascripts/validation.js"></script>
+    <title>Exercises 1—4 | Sign Up</title>
+  </head>
+
+  <body>
+    <h1>Sign up Form</h1>
+    <form action="#" method="POST">
+      <span class="error-message"></span>
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="first-name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="first-name" name="first_name" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt>
+            <label for="last-name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="last-name" name="last_name" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email"
+                   placeholder="someone@example.com" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt>
+            <label for="password">Password</label>
+          </dt>
+          <dd>
+            <input type="password" id="password" name="password" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt>
+            <label for="phone-number">Phone Number</label>
+          </dt>
+          <dd>
+            <input type="tel" id="phone-number" name="phone_number"
+                   placeholder="111-222-3333" pattern="\d{3}-\d{3}-\d{4}">
+            <span class="error-message"></span>
+          </dd>
+
+          <dt>
+            <label for="card1">Credit Card</label>
+          </dt>
+          <dd>
+            <input type="text" name="credit-card" maxlength="4"
+                   pattern="\d{4}" id="card1">
+            -
+            <input type="text" name="credit-card" maxlength="4"
+                   pattern="\d{4}">
+            -
+            <input type="text" name="credit-card" maxlength="4"
+                   pattern="\d{4}">
+            -
+            <input type="text" name="credit-card" maxlength="4"
+                   pattern="\d{4}">
+            <span class="error-message"></span>
+          </dd>
+        </dl>
+        <input type="submit" value="Sign Up">
+      </fieldset>
+    </form>
+    <div class="serialized-form">
+      <h2>Serialized Form</h2>
+      <samp class="form-output"></samp>
+    </div>
+  </body>
+
+</html>

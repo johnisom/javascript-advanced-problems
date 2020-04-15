@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="assets/javascripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascripts/handlebars.min.js"></script>
+    <script src="assets/javascripts/todo.js"></script>
+    <title>Exercise 4 | Todos</title>
+  </head>
+
+  <body>
+    <h1>Todos</h1>
+
+    <main>
+    </main>
+
+    <ul id="context-menu">
+      <li>Edit Todo</li>
+      <li>Show Details</li>
+      <li class="delete">Delete</li>
+    </ul>
+
+    <div id="confirmation-wrapper">
+      <div id="confirmation">
+        <div id="inner-confirmation">
+          <p>Are you sure you want to delete this todo?</p>
+          <button id="no">No</button>
+          <button id="yes">Yes</button>
+        </div>
+      </div>
+    </div>
+
+    <script id="todos-template" type="text/x-handlebars-template">
+    <ul class="todos">
+      {{#each todoItems}}
+        <li class="todo" data-id="{{id}}">
+          <p class="title">{{title}}</p>
+        </li>
+      {{/each}}
+    </ul>
+    </script>
+  </body>
+
+</html>

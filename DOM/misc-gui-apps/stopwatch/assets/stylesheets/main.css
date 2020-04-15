@@ -1,0 +1,47 @@
+body {
+    background-color: #a19123;
+    text-align: center;
+}
+
+#timer {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+#timer span {
+    display: inline-block;
+    font-size: 5rem;
+    text-align: right;
+    width: 2.81ch;
+}
+
+#timer span:last-child {
+    width: 2ch;
+}
+
+#hours::after, #minutes::after, #seconds::after {
+    content: ":";
+    margin: 0 5px;
+}
+
+#reset {
+    margin-left: 20px;
+}
+
+#start-stop, #reset {
+    background-color: #a19123;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    height: 35px;
+    width: 80px;
+}
+
+#start-stop:hover, #reset:hover {
+    background-color: #b19123;
+}3
+}

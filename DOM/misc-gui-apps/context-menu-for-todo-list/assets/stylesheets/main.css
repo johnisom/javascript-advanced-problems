@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #264;
+    padding: 50px 27px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 640px;
+}
+
+.todos {
+    padding-left: 40px;
+    /* list-style-type: none; */
+}
+
+.todo {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.todo + .todo {
+    margin-top: 20px;
+}
+
+p.title {
+    display: inline;
+}
+
+#context-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    font-size: 1.15rem;
+    list-style-type: none;
+    position: absolute;
+    width: 200px;
+}
+
+#context-menu li {
+    background-color: #ccc;
+    cursor: default;
+    padding: 10px 15px;
+}
+
+#context-menu li:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#context-menu li:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#context-menu li + li {
+    margin-top: 1px;
+}
+
+#context-menu li:hover {
+    background-color: #aaa;
+    box-shadow: 0 0 5px 0 #aaa;
+    color: #fff;
+}
+
+#confirmation-wrapper {
+    display: none;
+}
+
+#confirmation {
+    align-items: center;
+    background-color: #0004;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#inner-confirmation {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 15px;
+    width: 500px;
+}
+
+#inner-confirmation p {
+    margin: 20px 0;
+}
+
+#yes {
+    background-color: #a33;
+}
+
+#yes:hover {
+    background-color: #933;
+    box-shadow: 0 0 5px 0 #933;
+}
+
+#yes:active {
+    background-color: #833;
+}
+
+#no {
+    background-color: #3a3;
+}
+
+#no:hover {
+    background-color: #393;
+    box-shadow: 0 0 5px 0 #393;
+}
+
+#no:active {
+    background-color: #383;
+}
+
+#yes, #no {
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    float: right;
+    height: 30px;
+    margin-left: 5px;
+    width: 50px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a1b29dd357.js" crossorigin="anonymous"></script>
+ <script src="assets/javascripts/editor.js"></script>
+    <title>Exercise 9 | Rich Text Editor</title>
+  </head>
+
+  <body>
+    <h1>Rich Text Editor</h1>
+
+    <div id="wrapper">
+      <main id="editor">
+        <div id="edit-buttons">
+          <button data-command="bold"
+                  class="fas fa-bold face"></button>
+          <button data-command="italic"
+                  class="fas fa-italic face"></button>
+          <button data-command="underline"
+                  class="fas fa-underline face"></button>
+          <button data-command="strikethrough"
+                  class="fas fa-strikethrough face"></button>
+          <button class="fas fa-link link"></button>
+          <button data-command="insertUnorderedList"
+                  class="fas fa-list-ul list"></button>
+          <button data-command="insertOrderedList"
+                  class="fas fa-list-ol list"></button>
+          <button data-command="justifyLeft"
+                  class="fas fa-align-left align applied"></button>
+          <button data-command="justifyCenter"
+                  class="fas fa-align-center align"></button>
+          <button data-command="justifyRight"
+                  class="fas fa-align-right align"></button>
+          <button data-command="justifyFull"
+                  class="fas fa-align-justify align"></button>
+        </div>
+
+        <div id="content" contenteditable autofocus></div>
+      </main>
+    </div>
+  </body>
+
+</html>

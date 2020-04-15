@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9a0;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.partial::after {
+    content: " …";
+}
+
+button {
+    background-color: #9a0;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font: inherit;
+    margin-top: 15px;
+    padding: 2px 5px;
+}

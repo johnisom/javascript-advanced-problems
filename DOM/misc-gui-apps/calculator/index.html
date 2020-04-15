@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/stylesheets/reset.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <script src="assets/javascripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascripts/handlebars.min.js"></script>
+    <script src="assets/javascripts/calc.js"></script>
+    <title>Exercise 8 | Calculator</title>
+  </head>
+
+  <body>
+    <div id="screen">
+      <output id="operation-window"></output>
+      <output id="entry-window"></output>
+    </div>
+
+    <div id="buttons">
+      <button class="special" id="btn-ce">CE</button>
+      <button class="special" id="btn-c">C</button>
+      <button class="special" id="btn-neg">NEG</button>
+      <button class="operator" id="btn-divide">÷</button>
+
+      <button class="digit" id="btn-7">7</button>
+      <button class="digit" id="btn-8">8</button>
+      <button class="digit" id="btn-9">9</button>
+      <button class="operator" id="btn-multiply">×</button>
+
+      <button class="digit" id="btn-4">4</button>
+      <button class="digit" id="btn-5">5</button>
+      <button class="digit" id="btn-6">6</button>
+      <button class="operator" id="btn-subtract">-</button>
+
+      <button class="digit" id="btn-1">1</button>
+      <button class="digit" id="btn-2">2</button>
+      <button class="digit" id="btn-3">3</button>
+      <button class="operator" id="btn-add">+</button>
+
+      <button class="digit" id="btn-0">0</button>
+      <button class="special" id="btn-decimal">.</button>
+      <button class="operator" id="btn-remainder">%</button>
+      <button class="special" id="btn-equal">=</button>
+    </div>
+
+    <aside>
+      <h2>
+        Keyboard Use <a href="#keyboard-tips" id="show-hide-tips">(Show)</a>
+      </h2>
+      <ul id="keyboard-tips">
+        <li>
+          Numbers and the decimal point all work as expected.
+        </li>
+        <li>
+          To multiply, press the <code>x</code> or the <code>*</code> key.
+        </li>
+        <li>
+          To divide, press the <code>/</code> key.
+        </li>
+        <li>
+          To negate the current entry (<code>NEG</code>), use the
+          key-combo <code>Alt + -</code> (minus).
+        </li>
+        <li>
+          To clear the current entry (<code>C</code>), press your backspace or
+          delete key.
+        </li>
+        <li>
+          To clear everything (<code>CE</code>), press <code>Alt</code> with
+          backspace or delete.
+        </li>
+        <li>
+          To see the result (<code>=</code>), press <code>=</code> or your
+          enter key.
+        </li>
+      </ul>
+    </aside>
+  </body>
+
+</html>

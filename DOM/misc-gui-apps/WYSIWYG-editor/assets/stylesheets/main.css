@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#wrapper {
+    margin: 20px;
+}
+
+#editor {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#edit-buttons {
+    background-color: #afcadb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 0;
+    padding: 10px;
+}
+
+#edit-buttons button {
+    background-color: #eee;
+    border: 3px solid #eee;
+    font-size: 1.2rem;
+    height: 35px;
+    margin-right: 10px;
+    width: 35px;
+}
+
+#edit-buttons button.applied {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+#edit-buttons button:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#edit-buttons button:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#edit-buttons button:hover {
+    border-color: #ccc;
+    border-style: outset;
+}
+
+#edit-buttons button:focus {
+    outline: none;
+}
+
+#edit-buttons button:active {
+    border-color: #ccc;
+    border-style: inset;
+}
+
+#content {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.2rem;
+    height: 450px;
+    padding: 5px 10px;
+}
+
+#content:focus {
+    outline: none;
+}
